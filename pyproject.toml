@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gemini-project-api"
+version = "0.1.0"
+description = ""
+authors = ["dewdroid <thossapoldew@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+google-generativeai = "^0.7.1"
+pydantic-settings = "^2.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

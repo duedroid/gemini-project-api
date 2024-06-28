@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+
+.vscode/
+*.sqlite3
+*.env
+staticfiles/
+media/
+.idea/
+*.sql
+celerybeat-schedule
+gcs.json
