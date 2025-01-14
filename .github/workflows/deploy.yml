@@ -30,8 +30,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.CLOUD_RUN_SERVICE }}:latest .
+          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/cloud-run-source-deploy/${{ secrets.CLOUD_RUN_SERVICE }}:latest .
 
       - name: Push Docker image
         run: |
-          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.CLOUD_RUN_SERVICE }}:latest
+          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/cloud-run-source-deploy/${{ secrets.CLOUD_RUN_SERVICE }}:latest
